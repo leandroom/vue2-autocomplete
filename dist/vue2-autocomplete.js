@@ -267,6 +267,12 @@ if (false) {(function () {
       type: Number,
       default: 0
     },
+	  
+    // disabled input
+    disabled: {
+      type: Boolean,
+      default: false
+    },
 
     // Create a custom template from data.
     onShouldRenderChild: Function,
@@ -670,7 +676,8 @@ var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._sel
       "id": _vm.id,
       "placeholder": _vm.placeholder,
       "name": _vm.name,
-      "autocomplete": "off"
+      "autocomplete": "off",
+      "disabled": _vm.disabled
     },
     domProps: {
       "value": (_vm.type)
